@@ -27,13 +27,13 @@ module "ghost" {
   }
 
   services = {
-    ecsdemo-frontend = {
+    ghost = {
       cpu    = 1024
       memory = 4096
 
       # Container definition(s)
       container_definitions = {
-        ghost = {
+        server = {
           cpu                = 512
           memory             = 1024
           essential          = true
