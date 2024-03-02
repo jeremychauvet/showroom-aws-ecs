@@ -33,7 +33,7 @@ module "ghost" {
 
       # Container definition(s)
       container_definitions = {
-        server = {
+        ghost = {
           cpu                = 512
           memory             = 1024
           essential          = true
