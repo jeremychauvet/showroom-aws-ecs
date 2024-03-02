@@ -42,17 +42,17 @@ module "ghost" {
         }
       }
 
-      service_connect_configuration = {
-        namespace = "ghost"
-        service = {
-          client_alias = {
-            port     = 80
-            dns_name = "ghost"
-          }
-          port_name      = "ghost"
-          discovery_name = "ghost"
-        }
-      }
+      # service_connect_configuration = {
+      #   namespace = "ghost"
+      #   service = {
+      #     client_alias = {
+      #       port     = 80
+      #       dns_name = "ghost"
+      #     }
+      #     port_name      = "ghost"
+      #     discovery_name = "ghost"
+      #   }
+      # }
 
       # load_balancer = {
       #   service = {
